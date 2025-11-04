@@ -1,6 +1,10 @@
-import java.net.*;
-import java.io.*;
-import java.lang.Runnable;
+import java.net.Socket;
+import java.lang.System;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class MiniHTTP {
     public static void main(String[] args) throws Exception {
