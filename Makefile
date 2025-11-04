@@ -9,7 +9,7 @@ JAR_FILE := minhttp.jar
 ANDROID_TMPDIR := /data/local/tmp
 
 all:
-	$(JAVAC) -source $(JAVA_VER) -target $(JAVA_VER) MiniHTTP.java
+	$(JAVAC) --release $(JAVA_VER) MiniHTTP.java
 	$(D8) --release --output $(JAR_FILE) MiniHTTP.class --lib $(PLATFORM)
 
 push:
