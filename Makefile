@@ -1,8 +1,9 @@
-
 JAVAC  := javac
 D8     := d8
-PLATFORM := $(HOME)/AndroidX/Sdk/platforms/android-36/android.jar
-JAVA_VER := 21
+
+PLATFORM_V := android-36
+PLATFORM := $(HOME)/AndroidX/Sdk/platforms/$(PLATFORM_V)/android.jar
+JAVA_VER := 11
 JAR_FILE := minhttp.jar
 
 ANDROID_TMPDIR := /data/local/tmp
